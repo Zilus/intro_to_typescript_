@@ -3,6 +3,6 @@
         "sourceMap": true
     },
     "files": [
-        "006_5_string_interpolation.ts"
+        "007_types.ts"
     ]
 }
