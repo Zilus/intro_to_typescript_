@@ -1,16 +1,34 @@
-var dbQuery = function() : void {
-   setTimeout(
-       () => {
-        console.log('Query Results')
-       }, 3000
-   ); 
+"use strict";
+
+// start process
+// complete process -> Resolve
+// Not completed -> Reject
+
+let performUpload = function(imgStatus: string) : Promise<{imgStatus: string}> {
+    return new Promise((resolve) => {
+        console.log(`Status: ${imgStatus}`);
+        setTimeout(
+            () => {
+                resolve({ imgStatus: imgStatus })
+            }, 1000
+        );
+    });
 }
 
-function loadPage(q: () => void) {
-    console.log('header import');
-    q();
-    console.log('sidebar import');
-    console.log('footer import');
-}
+var upload;
+var compress;
+var transfer;
 
-loadPage(dbQuery);
+performUpload('uploading...')
+.then((res) => {
+    compress = res;
+    return performUpload('compressing...');
+})
+.then((res) => {
+    upload = res;
+    return performUpload('transfering...');
+})
+.then((res) => {
+    transfer = res;
+    return performUpload('Image upload completed');
+});
