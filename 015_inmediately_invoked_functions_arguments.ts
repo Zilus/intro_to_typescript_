@@ -1,0 +1,13 @@
+//Func expression
+var fullName : (first: string, last: string) => string;
+
+fullName = function(first: string, last: string) {
+    return first + " " + last;
+}
+
+console.log(fullName("Oscar", "Azpeitia"));
+
+//Inmediately invoked
+(function(first: string, last: string){
+    console.log(first + " " + last);
+})("Ana", "Moya");
