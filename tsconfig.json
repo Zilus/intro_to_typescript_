@@ -3,6 +3,6 @@
         "sourceMap": true
     },
     "files": [
-        "021_interfaces_for_functions.ts"
+        "022_interfaces_classes.ts"
     ]
 }
