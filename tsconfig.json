@@ -3,6 +3,6 @@
         "sourceMap": true
     },
     "files": [
-        "023_namespaces.ts"
+        "024_this.ts"
     ]
 }
