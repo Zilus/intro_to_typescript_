@@ -8,7 +8,7 @@ class Post {
 function processOne() {
     console.log('processOne has run');
     return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
-        console.log("ProcesOne has been called");
+        console.log("ProcessOne has been called");
     }
 }
 

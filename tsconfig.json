@@ -8,6 +8,6 @@
         "sourceMap": true
     },
     "files": [
-        "029_method_decorators.ts"
+        "027_decorators_intro.ts"
     ]
 }
