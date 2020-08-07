@@ -21,11 +21,11 @@ var transfer;
 
 performUpload('uploading...')
 .then((res) => {
-    compress = res;
+    upload = res;
     return performUpload('compressing...');
 })
 .then((res) => {
-    upload = res;
+    compress = res;
     return performUpload('transfering...');
 })
 .then((res) => {
