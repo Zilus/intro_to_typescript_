@@ -1,6 +1,6 @@
 "use strict";
 
-// start process
+// start process -> Pending
 // complete process -> Resolve
 // Not completed -> Reject
 

@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "module": "amd",
-        //"target": "es6", //sudo npm install typings --global && sudo typings install dt~es6-promise dt~es6-collections --global --save
-        "target": "es5",
+        "target": "es6", //sudo npm install typings --global && sudo typings install dt~es6-promise dt~es6-collections --global --save
+        //"target": "es5",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "sourceMap": true
